@@ -1,64 +1,80 @@
-# C-DASH — Communications Dashboard
+# C-DASH — Media Intelligence Report
 
-A fully static, interactive communications dashboard for PSA International tracking media coverage, sentiment, reputation, and stakeholder insights.
+A fully static, interactive communications dashboard for PSA International tracking media sentiment and stakeholder intelligence.
 
 ## Features
 
-- **8 Navigation Sections**: Executive Overview, Strategic Dashboard, Media Bias, Competitor Analyses, Media Visibility, Message Effectiveness, Reputation Health, Stakeholder Intelligence
-- **Interactive Charts**: Chart.js-powered visualizations with tooltips and hover effects
+- **2 Main Sections**: Media Sentiment (Part A) & Stakeholder Intelligence (Part B)
+- **Interactive Visualizations**: Scatter plot for stakeholder matrix, bar charts for competitor coverage
 - **Fully Static**: No build step required, works directly on GitHub Pages
-- **Data-Driven**: All data in `js/data.js` for easy daily updates
-
-## Quick Start
-
-### Option 1: Open Directly
-
-Simply open `index.html` in your browser. The data is embedded in `js/data.js`, so no server is needed.
-
-### Option 2: Local Server
-
-```bash
-python3 -m http.server 8000
-```
-
-Then open http://localhost:8000
+- **Data-Driven**: All data in `data/dashboard.json` for easy updates via n8n or manual editing
 
 ## Project Structure
 
 ```
 comms-dashboard/
-├── index.html          # Main page
+├── index.html                  # Main page
 ├── css/
-│   └── styles.css      # Custom overrides
+│   └── styles.css              # Custom overrides
 ├── js/
-│   ├── data.js         # All dashboard data (edit this for updates)
-│   ├── components.js   # HTML rendering functions
-│   ├── charts.js       # Chart.js initializations
-│   └── app.js          # Tab navigation and initialization
+│   ├── data.js                 # Data loader + embedded fallback
+│   ├── components.js           # HTML rendering functions
+│   ├── charts.js               # Chart.js initializations
+│   └── app.js                  # Tab navigation + modal
+├── data/
+│   └── dashboard.json          # Main data file (n8n writes here)
 └── assets/
-    └── psa-logo.png    # PSA logo
+    └── psa-logo.png            # PSA logo
 ```
 
-## Updating Data
+## Data Flow
 
-Edit `js/data.js` to update the dashboard. All data is organized by section:
+### Manual Updates
+Edit `data/dashboard.json` and refresh the browser.
 
-- `kpis` — Top KPI cards
-- `executiveInsight` — Executive summary text
-- `signals` — Signals & actions table
-- `priorityStakeholders` — Priority stakeholders list
-- `narrativeTrend` — Narrative trend chart data
-- `mediaTrend` — Media mentions trend data
-- `messagePickup` — Message pickup by theme
-- `risks` — Risk alerts
-- `articles` — Article details table
-- `competitors` — Competitor profiles
-- And more...
+### n8n Automation Flow
+```
+newsdata.io → AI Analysis → Generate dashboard.json → Git Push → GitHub Pages auto-deploys
+```
 
-## Technologies Used
+### Fallback
+If `data/dashboard.json` fails to load, the site falls back to embedded data in `js/data.js`.
+
+## Quick Start
+
+### Option 1: Open Directly
+Open `index.html` in your browser (uses embedded fallback data).
+
+### Option 2: Local Server
+```bash
+python3 -m http.server 8000
+```
+Then open http://localhost:8000
+
+## Sections
+
+### Part A — Media Sentiment
+- Executive Overview (at a glance, sentiment drivers, key implications)
+- KPI Row (4 metrics: Sentiment, Intensity, Media Profile, Headline Risk)
+- Positive Developments + Watch Items
+- Competitor Coverage Bar Chart
+- Strategic Dashboard (10-indicator table with trend arrows)
+- Competitor Landscape (6 companies)
+
+### Part B — Stakeholder Intelligence
+- Stakeholder Executive Summary (ecosystem, opportunities, risks)
+- KPI Row (4 metrics: Ecosystem, Coverage Pattern, Stakeholders, Engagement Model)
+- Stakeholder Matrix 2×2 (interactive scatter plot with tooltips)
+- Top 10 Priority Stakeholders
+- Engagement Status
+- Priority Media Relationship Tracker (with star ratings)
+- Stakeholder Influence Tracker
+- Priority Media Relationships
+
+## Technologies
 
 - **Tailwind CSS** (CDN) — Styling
-- **Chart.js** — Interactive charts
+- **Chart.js** — Interactive charts (scatter plot, bar chart)
 - **Vanilla JavaScript** — No frameworks, no build step
 
 ## GitHub Pages Deployment

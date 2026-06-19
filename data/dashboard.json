@@ -1,0 +1,200 @@
+{
+  "header": {
+    "title": "C-DASH — Media Intelligence Report",
+    "subtitle": "Media Sentiment & Stakeholder Intelligence",
+    "period": "1 January – 12 June 2026",
+    "company": "PSA International",
+    "preparedFor": "Senior Management / GCAD",
+    "disclaimer": "PROTOTYPE REPORT ONLY — Data & AI Initiative · Confidential"
+  },
+
+  "partA": {
+    "overview": {
+      "atGlance": "PSA's coverage is consistently positive, operationally focused and sector-relevant — concentrated in maritime and logistics trade media and corporate announcements. Coverage highlights infrastructure upgrades, optimisation and partnerships, with limited amplification beyond industry channels. Competitors — particularly DP World and COSCO — command broader narrative reach across expansion, sustainability and geopolitics.",
+      "sentimentDrivers": [
+        "Operational performance and capacity expansion",
+        "Digitalisation and automation",
+        "Partnerships and investments"
+      ],
+      "positiveDevelopments": [
+        "Tuas Port — PSA Singapore's Tuas Port — the world's largest fully automated container terminal — drew continued positive coverage, including completion of Phase Two automation (AI-driven systems and autonomous guided vehicles across additional berths), reinforcing Singapore's transhipment-hub status and PSA's Node-to-Network flagship super-hub narrative.",
+        "PSA Antwerp optimisation enabling uninterrupted throughput during modernisation.",
+        "PSA Mumbai and other terminals expanding capacity and capability.",
+        "Continued global network expansion and partnerships."
+      ],
+      "neutralDevelopments": [
+        "Technical deployment of systems and operational upgrades",
+        "Modernisation projects and infrastructure transitions"
+      ],
+      "watchItems": [
+        "External disruption risk in Europe and the Middle East (incl. Hormuz) affecting global supply chains — narrative shaped externally."
+      ],
+      "strategicImplication": "PSA is well positioned in sectoral media aligned to operational stakeholders, reflecting strong execution credibility. Coverage remains tactical (operations-led) rather than strategic (market-narrative-led), with competitors more visible across expansion, sustainability and geopolitics.",
+      "keyImplications": [
+        { "type": "strength", "text": "Strong credibility in PSA's core operational domain." },
+        { "type": "strength", "text": "Visibility well aligned with relevant industry stakeholders." },
+        { "type": "observation", "text": "Less presence in the macro-level narratives shaping global trade discourse." },
+        { "type": "observation", "text": "Competitors occupy broader narrative territory (expansion, sustainability, geopolitics) — a difference in profile rather than an operational weakness." }
+      ]
+    },
+
+    "kpis": {
+      "overallSentiment": { "value": "Positive", "status": "green" },
+      "intensity": { "value": "Mild positive", "status": "green" },
+      "mediaProfile": { "value": "Trade-led / B2B", "status": "blue" },
+      "headlineRisk": { "value": "Supply-chain", "status": "amber" }
+    },
+
+    "dashboard": [
+      { "indicator": "Volume of coverage", "finding": "Consistent but moderate", "trend": "stable", "sentiment": "Positive (mild)", "sentimentColor": "green", "risk": "Amplify reach", "implication": "Strong within sector, limited outside" },
+      { "indicator": "Tone of coverage", "finding": "Uniformly positive", "trend": "stable", "sentiment": "Positive (mild)", "sentimentColor": "green", "risk": "Reputation baseline", "implication": "Consistency reinforces credibility" },
+      { "indicator": "Sentiment drivers", "finding": "Ops, automation, expansion", "trend": "stable", "sentiment": "Positive (mild)", "sentimentColor": "green", "risk": "Broaden narrative", "implication": "Messaging remains operational" },
+      { "indicator": "Geography", "finding": "Global, unevenly visible", "trend": "stable", "sentiment": "Positive (mild)", "sentimentColor": "green", "risk": "Storytelling upside", "implication": "Global footprint under-reflected" },
+      { "indicator": "Media-type mix", "finding": "Trade-dominant", "trend": "stable", "sentiment": "Positive (mild)", "sentimentColor": "green", "risk": "Balanced for B2B", "implication": "Appropriate for stakeholder base" },
+      { "indicator": "Headline prominence", "finding": "High in trade", "trend": "stable", "sentiment": "Positive (mild)", "sentimentColor": "green", "risk": "Industry relevance", "implication": "Strong industry visibility" },
+      { "indicator": "Emerging risks", "finding": "Supply-chain disruption", "trend": "emerging", "sentiment": "Mixed (mild neg)", "sentimentColor": "amber", "risk": "External risk env.", "implication": "Narrative shaped externally" },
+      { "indicator": "Strategic opportunities", "finding": "Digitalisation, expansion", "trend": "improving", "sentiment": "Positive (mild)", "sentimentColor": "green", "risk": "Expand narrative", "implication": "Translate ops into strategy" },
+      { "indicator": "Competitor comparison", "finding": "Broader narratives", "trend": "emerging", "sentiment": "Mixed", "sentimentColor": "amber", "risk": "Visibility gap", "implication": "Peers occupy wider narrative" },
+      { "indicator": "Stakeholder signals", "finding": "Tech partners visible", "trend": "stable", "sentiment": "Neutral", "sentimentColor": "blue", "risk": "Limited visibility", "implication": "Technical collaboration recognised" }
+    ],
+
+    "competitors": [
+      { "company": "PSA International", "coverage": "Medium", "narratives": "Operations, automation, expansion (Tuas Port, Antwerp)", "sentiment": "Positive (mild)", "sentimentColor": "green", "positioning": "Strong operational credibility and sector visibility; narrower macro-narrative breadth than the most visible peers.", "isHighlighted": true },
+      { "company": "DP World", "coverage": "High", "narratives": "Expansion, sustainability, geopolitics", "sentiment": "Mixed–Positive", "sentimentColor": "amber", "positioning": "Most visible peer and benchmark for broad positioning; actively shaping the global narrative.", "isHighlighted": false },
+      { "company": "COSCO Shipping Ports", "coverage": "Medium", "narratives": "Expansion, geopolitics", "sentiment": "Mixed", "sentimentColor": "amber", "positioning": "Greater geopolitical visibility; overlaps PSA's expansion story.", "isHighlighted": false },
+      { "company": "APM Terminals", "coverage": "Medium", "narratives": "Infrastructure, disruption", "sentiment": "Mixed (mild neg)", "sentimentColor": "amber", "positioning": "Modernisation narrative carrying visible disruption risk.", "isHighlighted": false },
+      { "company": "Hutchison Ports", "coverage": "Low", "narratives": "Incremental expansion", "sentiment": "Positive (mild)", "sentimentColor": "green", "positioning": "Lower visibility; limited direct narrative pressure.", "isHighlighted": false },
+      { "company": "ICTSI", "coverage": "Low–Medium", "narratives": "Growth, financing", "sentiment": "Positive (mild)", "sentimentColor": "green", "positioning": "Active in the expansion narrative; growth-led profile.", "isHighlighted": false }
+    ]
+  },
+
+  "partB": {
+    "overview": {
+      "atGlance": "The stakeholder ecosystem is trade-media led, anchored by Journal of Commerce, Seatrade Maritime News, Container News and Port Technology International, with a limited but important presence in mainstream business media (Reuters, Bloomberg, The Business Times). Most identifiable coverage ties to PSA's Xiamen expansion and Node-to-Network integration messaging — indicating high baseline receptiveness but low independent editorial positioning.",
+      "opportunities": [
+        "Repeat trade journalists who consistently and accurately cover PSA.",
+        "Strong pull-through of the Node-to-Network narrative across trade titles.",
+        "Scope to move beyond press-release replication toward analysis-led narratives."
+      ],
+      "risks": [
+        "Few exclusive interviews or opinion placements.",
+        "Heavy reliance on announcement-driven coverage.",
+        "No consistent view of stakeholder influence metrics (reach, engagement)."
+      ],
+      "highlightStakeholders": [
+        "High-impact trade journalists: Keith Wallis, Michele Labrut, Antonia Saratsopoulou.",
+        "Analysts shaping interpretation (India Seatrade News).",
+        "Technology / innovation writers (Dominic Magli)."
+      ]
+    },
+
+    "kpis": {
+      "ecosystem": { "value": "Trade-led", "status": "blue" },
+      "coveragePattern": { "value": "Announcement-led", "status": "amber" },
+      "stakeholders": { "value": "10", "status": "green" },
+      "engagementModel": { "value": "Developing", "status": "amber" }
+    },
+
+    "matrix": {
+      "cultivation": [
+        { "name": "Reuters / Bloomberg", "type": "Collective", "note": "Very high reach; currently under-engaged" },
+        { "name": "Dominic Magli", "type": "Port Technology Int'l", "note": "Influences innovation and digitalisation narratives" },
+        { "name": "India Seatrade News analysts", "type": "India Seatrade News", "note": "Shape industry interpretation beyond reporting" }
+      ],
+      "maintain": [
+        { "name": "Keith Wallis", "type": "JoC Online", "note": "High influence; shapes the global trade narrative" },
+        { "name": "Michele Labrut", "type": "Seatrade Maritime News", "note": "Consistent industry coverage with positive alignment" },
+        { "name": "Antonia Saratsopoulou", "type": "Container News", "note": "Strong alignment with PSA ecosystem messaging" },
+        { "name": "Benicia Tan", "type": "The Business Times", "note": "Mainstream business reach and Singapore relevance" },
+        { "name": "WorldCargo News", "type": "Editorial team", "note": "Established trade-media influence" },
+        { "name": "Wang Yangfa", "type": "Lianhe Zaobao", "note": "Key regional influence with Chinese audiences" }
+      ],
+      "backgroundMonitor": [],
+      "emergingAllies": [
+        { "name": "Malik Johnson", "type": "World Ports Organisation", "note": "Emerging voice in port ecosystem" }
+      ]
+    },
+
+    "relationshipTracker": [
+      { "stakeholder": "Keith Wallis", "publication": "JoC Online", "role": "Journalist", "friendliness": 4, "influence": 5, "category": "Maintain" },
+      { "stakeholder": "Michele Labrut", "publication": "Seatrade Maritime News", "role": "Journalist", "friendliness": 4, "influence": 4, "category": "Maintain" },
+      { "stakeholder": "Antonia Saratsopoulou", "publication": "Container News", "role": "Journalist", "friendliness": 4, "influence": 4, "category": "Maintain" },
+      { "stakeholder": "Benicia Tan", "publication": "The Business Times", "role": "Journalist", "friendliness": 4, "influence": 5, "category": "Maintain" },
+      { "stakeholder": "Dominic Magli", "publication": "Port Technology Int'l", "role": "Journalist", "friendliness": 3, "influence": 4, "category": "Cultivation" },
+      { "stakeholder": "Analysts (unnamed)", "publication": "India Seatrade News", "role": "Analyst", "friendliness": 3, "influence": 4, "category": "Cultivation" },
+      { "stakeholder": "WorldCargo News", "publication": "WorldCargo News", "role": "Trade media", "friendliness": 4, "influence": 4, "category": "Maintain" },
+      { "stakeholder": "Wang Yangfa", "publication": "Lianhe Zaobao", "role": "Journalist", "friendliness": 4, "influence": 4, "category": "Maintain" },
+      { "stakeholder": "Malik Johnson", "publication": "World Ports Org", "role": "Contributor", "friendliness": 3, "influence": 3, "category": "Emerging" },
+      { "stakeholder": "Reuters / Bloomberg", "publication": "Mainstream business", "role": "Journalists", "friendliness": 3, "influence": 5, "category": "Cultivation" }
+    ],
+
+    "influenceTracker": [
+      { "stakeholder": "Keith Wallis", "platform": "Global trade media", "audience": "Shipping / logistics leaders", "relevance": "Very high", "signal": "Opportunity" },
+      { "stakeholder": "Michele Labrut", "platform": "Trade press", "audience": "Maritime professionals", "relevance": "High", "signal": "Opportunity" },
+      { "stakeholder": "Antonia Saratsopoulou", "platform": "Container sector", "audience": "Industry specialists", "relevance": "High", "signal": "Opportunity" },
+      { "stakeholder": "Dominic Magli", "platform": "Port-tech media", "audience": "Innovation stakeholders", "relevance": "High", "signal": "Opportunity" },
+      { "stakeholder": "ISN Analysts", "platform": "Industry analysis", "audience": "Sector decision-makers", "relevance": "High", "signal": "Opportunity" }
+    ],
+
+    "engagementStatus": [
+      { "stakeholder": "Keith Wallis", "status": "Active relationship" },
+      { "stakeholder": "Michele Labrut", "status": "Active relationship" },
+      { "stakeholder": "Antonia Saratsopoulou", "status": "Developing" },
+      { "stakeholder": "Benicia Tan", "status": "Active relationship" },
+      { "stakeholder": "Dominic Magli", "status": "Active relationship" },
+      { "stakeholder": "Wang Yangfa", "status": "Developing" },
+      { "stakeholder": "Reuters / Bloomberg", "status": "Not yet engaged" },
+      { "stakeholder": "ISN Analysts", "status": "Monitor only" }
+    ],
+
+    "top10": [
+      { "name": "Keith Wallis", "publication": "JoC Online", "description": "High influence; shapes the global trade narrative." },
+      { "name": "Michele Labrut", "publication": "Seatrade Maritime News", "description": "Consistent industry coverage with positive alignment." },
+      { "name": "Antonia Saratsopoulou", "publication": "Container News", "description": "Strong alignment with PSA ecosystem messaging." },
+      { "name": "Benicia Tan", "publication": "The Business Times", "description": "Mainstream business reach and Singapore relevance." },
+      { "name": "Dominic Magli", "publication": "Port Technology Int'l", "description": "Influences innovation and digitalisation narratives." },
+      { "name": "India Seatrade News analysts", "publication": "India Seatrade News", "description": "Shape industry interpretation beyond reporting." },
+      { "name": "Wang Yangfa", "publication": "Lianhe Zaobao", "description": "Key regional influence with Chinese audiences." },
+      { "name": "WorldCargo News", "publication": "WorldCargo News", "description": "Established trade-media influence." },
+      { "name": "Reuters", "publication": "Reuters", "description": "Very high reach; currently under-engaged." },
+      { "name": "Bloomberg", "publication": "Bloomberg", "description": "Strategic narrative amplification potential." }
+    ],
+
+    "relationshipTable": [
+      { "stakeholder": "Benicia Tan", "platform": "The Business Times", "relationship": "Strong", "topics": "Financial & strategic updates", "owner": "Local Comms" },
+      { "stakeholder": "Keith Wallis", "platform": "JoC Online", "relationship": "Strong", "topics": "Ports, trade flows, ecosystem integration", "owner": "GCAD" },
+      { "stakeholder": "Michele Labrut", "platform": "Seatrade", "relationship": "Strong", "topics": "Maritime operations, trade lanes", "owner": "Regional Comms" },
+      { "stakeholder": "Antonia Saratsopoulou", "platform": "Container News", "relationship": "Developing", "topics": "Supply-chain integration", "owner": "GCAD" },
+      { "stakeholder": "Dominic Magli", "platform": "PTI", "relationship": "Strong", "topics": "Digitalisation, innovation", "owner": "Innovation / Digital Comms" }
+    ]
+  },
+
+  "methodology": {
+    "referenceBaseline": "PSA International news releases are the issued messages against which external coverage is compared to assess pick-up of key news — they are the baseline, not a media source.",
+    "dataFeeds": [
+      "NewsToday: PSA's internal media-monitoring archive, via SharePoint enterprise search",
+      "NewsData.io: external web-news aggregation (competitor narratives and broader web sources)"
+    ],
+    "mediaCovered": {
+      "trade": "Journal of Commerce (JoC Online), Seatrade Maritime News, Container News, Port Technology International, WorldCargo News, Container Management, PortsEurope, India Seatrade News, World Ports Organisation",
+      "business": "Bloomberg, Reuters, The Business Times (Singapore), Business Insider / Markets Insider, MarketScreener",
+      "regional": "Lianhe Zaobao (Singapore, Chinese-language daily)"
+    },
+    "sentimentScale": [
+      { "label": "Positive", "definition": "Favourable coverage; supportive of PSA's reputation.", "color": "green" },
+      { "label": "Neutral", "definition": "Factual or balanced; neither clearly favourable nor unfavourable.", "color": "blue" },
+      { "label": "Mixed", "definition": "Combination of favourable and unfavourable signals; watch.", "color": "amber" },
+      { "label": "Negative", "definition": "Unfavourable coverage or material disruption risk.", "color": "red" }
+    ],
+    "assessmentMethod": [
+      "Framing is by media type (maritime/trade, logistics, corporate, business) rather than tier, consistent with PSA's B2B profile; limited mainstream presence is not treated as a gap.",
+      "Sentiment, friendliness and influence are inferred from article tone and publication type, not from direct engagement records; scores are indicative for management discussion.",
+      "Media stakeholders were highlighted based on their coverage of PSA within this defined media scope. Editors and contributors to non-attributed articles may not have been flagged, as they did not byline the articles."
+    ],
+    "nextIteration": [
+      "Local media — Prioritise key local Singapore media — The Straits Times, The Business Times and Lianhe Zaobao (and comparable national outlets) — to capture home-market visibility.",
+      "Trade media — Prioritise leading trade media not yet captured — Lloyd's List, TradeWinds, Seatrade Maritime, Container Management, Port Technology International and similar.",
+      "Stakeholder ecosystem — Extend the stakeholder ecosystem to named journalists and editors at the above local titles and key trade publications."
+    ]
+  }
+}

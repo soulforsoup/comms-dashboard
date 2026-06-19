@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>C-DASH Communications Dashboard</title>
-  <meta name="description" content="Delivers a strategic, executive-ready communications dashboard tracking media coverage, sentiment, reputation, and stakeholder insights for corporate leaders." />
+  <title>C-DASH — Media Intelligence Report</title>
+  <meta name="description" content="Media Sentiment & Stakeholder Intelligence for PSA International" />
   <link rel="icon" type="image/png" href="assets/psa-logo.png" />
   
   <!-- Tailwind CSS v4 CDN -->
@@ -38,33 +38,48 @@
   <!-- Custom styles -->
   <link rel="stylesheet" href="css/styles.css" />
 </head>
-<body class="min-h-screen bg-gray-100">
+<body class="bg-gray-100">
   <!-- Top Header -->
-  <header id="app-header" class="bg-white border-b border-gray-200 px-8 py-6 shadow-sm">
+  <header id="app-header" class="header">
     <!-- Rendered by App.renderHeader() -->
   </header>
 
-  <div class="flex">
-    <!-- Left Navigation -->
-    <nav id="app-nav" class="w-64 bg-white border-r border-gray-200 min-h-screen p-4">
-      <!-- Rendered by App.renderNav() -->
-    </nav>
+  <!-- Mobile Anchor Nav -->
+  <nav id="mobile-nav" class="mobile-nav">
+    <!-- Rendered by App.renderMobileNav() -->
+  </nav>
 
-    <!-- Main Content -->
-    <main class="flex-1 p-6">
-      <!-- Top KPI Cards -->
-      <div id="app-kpis" class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-9 gap-4 mb-8">
-        <!-- Rendered by App.renderKPIs() -->
-      </div>
+  <div class="layout">
+    <!-- Desktop Sidebar -->
+    <aside id="app-sidebar" class="sidebar">
+      <!-- Rendered by App.renderSidebar() -->
+    </aside>
 
-      <!-- Section Content -->
-      <div id="app-main">
-        <!-- Rendered by App.renderSection() -->
-      </div>
+    <!-- Main Content (all sections) -->
+    <main id="app-main" class="main-content">
+      <!-- All sections rendered here -->
     </main>
   </div>
 
-  <!-- Scripts (order matters) -->
+  <!-- About Modal -->
+  <div id="about-modal" class="modal-overlay hidden">
+    <div class="modal">
+      <div class="modal-header">
+        <h2 class="text-lg text-slate-800 font-semibold">About this report</h2>
+        <button id="btn-close-modal" class="text-gray-400 hover:text-gray-600 transition-colors">
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <div id="about-content" class="modal-body">
+        <!-- Rendered by Components.aboutContent() -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
   <script src="js/data.js"></script>
   <script src="js/components.js"></script>
   <script src="js/charts.js"></script>
