@@ -49,7 +49,10 @@ body {
 }
 
 .sidebar-logo img {
-  height: 36px;
+  height: 36px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  max-width: none !important;
 }
 
 .sidebar-logo h2 {
@@ -144,14 +147,22 @@ body {
 .main-content {
   flex: 1;
   padding: 24px;
-  overflow-y: auto;
   min-width: 0;
 }
 
 /* ===== Sections ===== */
 .section {
-  margin-bottom: 32px;
+  margin-bottom: 40px;
   scroll-margin-top: 110px;
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.section + .section {
+  margin-top: 8px;
 }
 
 .section-header {
@@ -161,6 +172,14 @@ body {
   margin-bottom: 20px;
   padding-bottom: 12px;
   border-bottom: 2px solid #dbeafe;
+}
+
+/* ===== Logo Utility ===== */
+.logo-img {
+  height: 36px !important;
+  width: auto !important;
+  object-fit: contain !important;
+  max-width: none !important;
 }
 
 /* ===== Stakeholder Matrix 2×2 Grid ===== */
@@ -232,7 +251,6 @@ body {
 /* Matrix axis labels */
 .matrix-axis-vertical {
   writing-mode: vertical-rl;
-  transform: rotate(180deg);
   font-size: 12px;
   font-weight: 600;
   color: #1e3a5f;
@@ -321,17 +339,19 @@ body {
   }
 
   .main-content {
-    padding: 16px;
+    padding: 12px;
   }
 
   .section {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
+    padding: 16px;
+    border-radius: 8px;
     scroll-margin-top: 100px;
   }
 
   .section-header {
-    font-size: 18px;
-    margin-bottom: 16px;
+    font-size: 16px;
+    margin-bottom: 14px;
   }
 
   /* KPI cards: 2 columns */
@@ -368,6 +388,10 @@ body {
   to { opacity: 1; transform: translateY(0); }
 }
 
+/* ===== PDF Page Break Classes ===== */
+.no-break { page-break-inside: avoid; }
+.table-break { page-break-inside: auto; }
+
 canvas {
   max-width: 100%;
 }
@@ -388,4 +412,36 @@ canvas {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #94a3b8;
+}
+
+/* ===== Print / PDF Export ===== */
+@media print {
+  .header,
+  .sidebar,
+  .mobile-nav,
+  .modal-overlay,
+  #btn-export,
+  #btn-about {
+    display: none !important;
+  }
+
+  .layout {
+    display: block;
+  }
+
+  .main-content {
+    padding: 0;
+  }
+
+  .section {
+    break-inside: avoid;
+    page-break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+  }
+
+  body {
+    background: #ffffff;
+  }
 }

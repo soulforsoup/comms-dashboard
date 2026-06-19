@@ -98,7 +98,7 @@ const Components = {
         <h2 class="section-header">Executive Overview</h2>
         <div class="space-y-6">
         <!-- KPI Row -->
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 no-break">
           ${this.kpiCard('Overall Sentiment', kpis.overallSentiment.value, kpis.overallSentiment.status)}
           ${this.kpiCard('Intensity', kpis.intensity.value, kpis.intensity.status)}
           ${this.kpiCard('Media Profile', kpis.mediaProfile.value, kpis.mediaProfile.status)}
@@ -193,7 +193,7 @@ const Components = {
       <section id="dashboard" class="section animate-in">
         <h2 class="section-header">Strategic Dashboard</h2>
         <div class="space-y-6">
-        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 table-break">
           <h3 class="text-lg text-slate-800 mb-4">Strategic Dashboard Summary</h3>
           <p class="text-xs text-gray-500 mb-4">Ten indicators across volume, tone, reach and risk. Sentiment is colour-coded; trend arrows show direction of travel.</p>
           <div class="overflow-x-auto table-scroll">
@@ -242,7 +242,7 @@ const Components = {
         </div>
 
         <!-- Table -->
-        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 table-break">
           <h3 class="text-lg text-slate-800 mb-4">Competitor Landscape</h3>
           <p class="text-xs text-gray-500 mb-4">PSA shown alongside its principal competitors (PSA row highlighted).</p>
           <div class="overflow-x-auto table-scroll">
@@ -303,7 +303,7 @@ const Components = {
         </div>
 
         <!-- 2×2 Matrix -->
-        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200">
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-200 no-break">
           <h3 class="text-lg text-blue-900 mb-1">Stakeholder Matrix (2×2)</h3>
           <p class="text-xs text-gray-600 mb-4">Stakeholders mapped by friendliness (horizontal) and influence (vertical).</p>
 
@@ -424,13 +424,13 @@ const Components = {
         <h2 class="section-header">Stakeholder Intelligence</h2>
         <div class="space-y-6">
         <!-- Top 10 -->
-        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 table-break">
           <h3 class="text-lg text-slate-800 mb-4">Top 10 Priority Stakeholders</h3>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-3 cards-grid-2">${top10Cards}</div>
         </div>
 
         <!-- Engagement Status -->
-        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 table-break">
           <h3 class="text-lg text-slate-800 mb-4">Engagement Status</h3>
           <div class="overflow-x-auto table-scroll">
             <table class="w-full">
@@ -446,7 +446,7 @@ const Components = {
         </div>
 
         <!-- Relationship Tracker -->
-        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 table-break">
           <h3 class="text-lg text-slate-800 mb-4">Priority Media Relationship Tracker</h3>
           <p class="text-xs text-gray-500 mb-4">Note: Scores are inferred from article tone and publication type; indicative for management discussion.</p>
           <div class="overflow-x-auto">
@@ -467,7 +467,7 @@ const Components = {
         </div>
 
         <!-- Influence Tracker -->
-        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 table-break">
           <h3 class="text-lg text-slate-800 mb-4">Stakeholder Influence Tracker</h3>
           <p class="text-xs text-gray-500 mb-4">Every high-relevance stakeholder represents an engagement opportunity rather than a risk.</p>
           <div class="overflow-x-auto">
@@ -487,7 +487,7 @@ const Components = {
         </div>
 
         <!-- Priority Media Relationships -->
-        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100">
+        <div class="bg-white rounded-lg p-6 shadow-sm border border-gray-100 table-break">
           <h3 class="text-lg text-slate-800 mb-4">Priority Media Relationships</h3>
           <div class="overflow-x-auto">
             <table class="w-full">
