@@ -1,0 +1,51 @@
+/* C-DASH Custom Styles */
+
+/* Smooth transitions for section changes */
+#app-main {
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Chart canvas responsive sizing */
+canvas {
+  max-width: 100%;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Sticky sidebar */
+.sticky {
+  position: sticky;
+  top: 1.5rem;
+}
+
+/* Table responsiveness */
+.overflow-x-auto {
+  -webkit-overflow-scrolling: touch;
+}
+
+/* Tooltip z-index for stakeholder matrices */
+.group:hover .group-hover\:opacity-100 {
+  z-index: 10;
+}
