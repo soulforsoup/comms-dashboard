@@ -6,10 +6,9 @@ dashboard in JSON format.
 
 # Output Rules
 
-1. Output ONLY valid JSON. No markdown, no code fences, no explanation text.
+1. Output ONLY valid JSON. Start immediately with `{` and end with `}`. Do NOT output conversational text, greetings, or explanations (e.g., never say "Thank you" or "Here is the report").
 2. The JSON must match the exact schema provided below — same keys, same structure.
-3. For fields where no new data exists in the articles, carry forward the values
-   from the CURRENT DASHBOARD provided below.
+3. If there is NO new data (or 0 articles), you MUST STILL output the full JSON object. Simply duplicate the CURRENT DASHBOARD exactly as provided, updating only the `header.period`. DO NOT output messages like "No new articles were published."
 4. Sentiment must be one of: "Positive (mild)", "Neutral", "Mixed", "Mixed (mild neg)", "Negative (mild)".
 5. SentimentColor must be one of: "green", "blue", "amber", "red".
 6. Trend must be one of: "stable", "improving", "emerging".
