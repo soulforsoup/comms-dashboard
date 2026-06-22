@@ -48,11 +48,15 @@ body {
   margin-bottom: 8px;
 }
 
-.sidebar-logo img {
-  height: 36px !important;
+.sidebar-logo img, .logo-img {
+  display: block;
+  max-height: 40px !important;
+  height: auto !important;
   width: auto !important;
+  max-width: 100% !important;
   object-fit: contain !important;
-  max-width: none !important;
+  object-position: left center;
+  flex-shrink: 0;
 }
 
 .sidebar-logo h2 {
@@ -174,13 +178,7 @@ body {
   border-bottom: 2px solid #dbeafe;
 }
 
-/* ===== Logo Utility ===== */
-.logo-img {
-  height: 36px !important;
-  width: auto !important;
-  object-fit: contain !important;
-  max-width: none !important;
-}
+/* ===== Logo Utility — merged into .sidebar-logo img, .logo-img rule above ===== */
 
 /* ===== Stakeholder Matrix 2×2 Grid ===== */
 .matrix-grid {

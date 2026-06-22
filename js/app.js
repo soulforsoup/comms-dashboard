@@ -26,7 +26,7 @@ const App = {
     header.innerHTML = `
       <div class="flex items-center justify-between">
         <div class="flex items-center gap-4">
-          <img src="${Data.logoBase64}" alt="PSA Logo" class="logo-img" />
+          <img src="assets/psa-logo.png" alt="PSA Logo" class="logo-img" />
           <div>
             <h1 class="text-lg tracking-tight text-blue-900 font-semibold">${d.title}</h1>
             <p class="header-subtitle text-xs text-gray-600 mt-0.5">${d.subtitle} | ${d.company} | ${d.period}</p>
@@ -60,7 +60,7 @@ const App = {
 
     sidebar.innerHTML = `
       <div class="sidebar-logo">
-        <img src="${Data.logoBase64}" alt="PSA" />
+        <img src="assets/psa-logo.png" alt="PSA" class="logo-img" />
         <h2>C-DASH</h2>
       </div>
       ${items}`;
@@ -188,7 +188,7 @@ const App = {
       const headerClone = document.createElement('div');
       headerClone.innerHTML = `
         <div style="display:flex;align-items:center;gap:16px;margin-bottom:24px;padding-bottom:16px;border-bottom:2px solid #dbeafe;">
-          <img src="${Data.logoBase64}" alt="PSA Logo" style="height:40px;width:auto;object-fit:contain;" />
+          <img src="assets/psa-logo.png" alt="PSA Logo" style="max-height:40px;height:auto;width:auto;max-width:100%;object-fit:contain;object-position:left center;" />
           <div>
             <h1 style="font-size:18px;font-weight:600;color:#1e3a5f;margin:0;">${Data.header.title}</h1>
             <p style="font-size:11px;color:#6b7280;margin:4px 0 0 0;">${Data.header.subtitle} | ${Data.header.company} | ${Data.header.period}</p>
