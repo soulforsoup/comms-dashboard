@@ -1,0 +1,108 @@
+{
+  "sources": [
+    {
+      "id": "newsdata-io-psa",
+      "type": "newsdata",
+      "enabled": true,
+      "apiKeyEnv": "NEWSDATA_API_KEY",
+      "queries": [
+        "\"PSA International\" OR \"PSA Singapore\"",
+        "\"PSA Singapore\" port OR terminal",
+        "\"Tuas Port\" OR \"PSA Antwerp\" OR \"PSA Mumbai\""
+      ],
+      "categories": "business,technology",
+      "language": "en",
+      "priority": "primary"
+    }
+  ],
+  "competitors": [
+    {
+      "company": "DP World",
+      "queries": ["\"DP World\" port OR logistics"]
+    },
+    {
+      "company": "COSCO Shipping Ports",
+      "queries": ["\"COSCO Shipping\" port OR terminal"]
+    },
+    {
+      "company": "APM Terminals",
+      "queries": ["\"APM Terminals\""]
+    },
+    {
+      "company": "Hutchison Ports",
+      "queries": ["\"Hutchison Ports\" OR \"HPH\""]
+    },
+    {
+      "company": "ICTSI",
+      "queries": ["\"ICTSI\" terminal"]
+    }
+  ],
+  "stakeholders": [
+    {
+      "name": "Keith Wallis",
+      "publication": "JoC Online",
+      "role": "Journalist",
+      "category": "Maintain"
+    },
+    {
+      "name": "Michele Labrut",
+      "publication": "Seatrade Maritime News",
+      "role": "Journalist",
+      "category": "Maintain"
+    },
+    {
+      "name": "Antonia Saratsopoulou",
+      "publication": "Container News",
+      "role": "Journalist",
+      "category": "Maintain"
+    },
+    {
+      "name": "Benicia Tan",
+      "publication": "The Business Times",
+      "role": "Journalist",
+      "category": "Maintain"
+    },
+    {
+      "name": "Dominic Magli",
+      "publication": "Port Technology Int'l",
+      "role": "Journalist",
+      "category": "Cultivation"
+    },
+    {
+      "name": "India Seatrade News analysts",
+      "publication": "India Seatrade News",
+      "role": "Analyst",
+      "category": "Cultivation"
+    },
+    {
+      "name": "Wang Yangfa",
+      "publication": "Lianhe Zaobao",
+      "role": "Journalist",
+      "category": "Maintain"
+    },
+    {
+      "name": "WorldCargo News",
+      "publication": "WorldCargo News",
+      "role": "Trade media",
+      "category": "Maintain"
+    },
+    {
+      "name": "Malik Johnson",
+      "publication": "World Ports Organisation",
+      "role": "Contributor",
+      "category": "Emerging"
+    },
+    {
+      "name": "Reuters / Bloomberg",
+      "publication": "Mainstream business",
+      "role": "Journalists",
+      "category": "Cultivation"
+    }
+  ],
+  "reportingPeriodDays": 30,
+  "llm": {
+    "model": "configurable",
+    "maxTokens": 8000,
+    "temperature": 0.2
+  }
+}
